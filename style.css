@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#body{
+    margin: 7px 7px 7px 7px;
+}
+
+/*-------------INDEX-----------------------*/
+
+
+/*HeaderIndex*/
+
+.portadaIndex{
+    width: 100%;
+    height: 70vh;
+    background-image: url(./img/portadaArtemisa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+
+    
+
+}
+
+.contenedor_barra_navegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 20px 20px 0px 0px;
+    list-style: none;
+
+    
+}
+
+.estiloLetraNavIndex{
+    text-decoration: none;
+    color: white;
+    margin-right: 5px;
+}
