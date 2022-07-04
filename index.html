@@ -4,36 +4,131 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Artemisa Relojes/Home</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/7225d3aba0.js" crossorigin="anonymous"></script>
+    
 </head>
 <body id="body">
     <header class="portadaIndex">
        
-        <nav>
-            <ul class="contenedor_barra_navegacion">
-                <li>
-                    <a href="" class="estiloLetraNavIndex">HOME</a>
-                </li>
-                <li>
-                    <a href="" class="estiloLetraNavIndex">PRODUCTOS</a>
-                </li>
-                <li>
-                    <a href="" class="estiloLetraNavIndex">SALE</a>
-                </li>
-                <li>
-                    <a href=""class="estiloLetraNavIndex">QUIENES SOMOS</a>
-                </li>
-                <li>
-                    <a href=""class="estiloLetraNavIndex">CONTACTO</a>
-                </li>
-            </ul>
-        </nav>
-        
+        <section>
+            
+            <nav class="navbar  fixed-top modificaColor m-3 @include media-breakpoint-up(lg) { dark }">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link active" id="estiloLetrasNav" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="estiloLetrasNav" href="./html/quienesSomos.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="estiloLetrasNav" href="./html/contacto.html">Contacto</a>
+                          </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" id="estiloLetrasNav" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                            <li><a class="dropdown-item" href="./html/productos.html">Nuestros Productos</a></li>
+                            <li><a class="dropdown-item" href="./html/ofertas.html">Sale!!</a></li>
+                          </ul>
+                      </ul>
+                      
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </section>
     </header>
-
+    
     <main>
         
+        <section class="contenedorFraseMainIndex">
+            <div>
+                <h1 class="tituloMainIndex">Artemisa ♥ Relojes</h1>
+                <p class="parrafoMainIndex">Un reloj nos enseña que el paso del tiempo es imparable. No dejes pasar tus horas sin vivir intensamente.</p>
+            </div>
+            <div class="enlacesSecundarios">
+                <a href="./html/productos.html" class="estiloLetrasEnlacesSecundarios">Productos ➳</a>
+                <a href="./html/quienesSomos.html" class="estiloLetrasEnlacesSecundarios">Sobre Nosotros ➳</a>
+            </div>
+        </section>
+        
+        <section class=" d-flex justify-content-center">
+          
+          <div id="carouselExampleCaptions" class="carousel slide w-75 m-2 " data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/relojMujer2-Modificada.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/relojHombre1-Modificada.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/relojMujer1-Modificada.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+         
+
+        </div>
     </main>
+
+    <footer >
+      <div class="contenedorFooter d-flex">
+        <h3 class="tituloFooter">Seguinos en nuestras Redes Sociales</h3>
+        <a href="https://www.instagram.com/artemisarelojes/?hl=es-la"  class="fa-brands fa-instagram estiloIconosFooter "></a>
+        <a href="https://www.facebook.com/artemisarelojes/?hc_ref=ARQHWAcJU-y4WZDLEUBvHUHY_FRa3gqgtf7zidcQ1ZGtp_bFOt0gwWJASu6mjIr3kiA&ref=nf_target&__xts__[0]=68.ARBDEdwOJJUeltCGvsjpVPK06jlFYI882H6vQ4DQRznCb79imiF4A32DOgwGaCgmoHtAdc8y1A5t_OkdwQQqTy2TqH66o5t0GMqwTKnAPYsTa3lEHNOmzHl6xi33aSAngDW8wBZr2enwdbBHmVv7JWecbz6lGj6iozDLotRNAyQp6oRfxx7658TJKGUXItyfHidL7lZVeoSTTPRLKUnLk8lw8QLnZMM7uDIVw4eH4sk9YaI56PWi6elEwcSGSH2Roa-n4Km_N2P7LFb-lRTZNY2xuFh7_GQGdHwGe6bIVoJjwhVXDFImKhAnk3OxQVdOvRZwFZs5zCW_3y-u0GRk7fG8yirbpkNgz_cNJhMWJeGHp2VOa_FMwYt-bDSm0W2d6qQR-g" class="fa-brands fa-facebook-f estiloIconosFooter"></a>             
+        <a href= "https://api.whatsapp.com/send?phone=543444448385&app=facebook&entry_point=page_cta" class="fa-brands fa-whatsapp estiloIconosFooter"></a>   
+      </div>
+    </footer>
+
+    
+  
+ 
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
