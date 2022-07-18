@@ -11,61 +11,103 @@
 </head>
 <body id="body">
     <header class="portadaContacto">
+      
        
-        <section>
-            <nav class="navbar  fixed-top modificaColor m-2">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                          <a class="nav-link active" id="estiloLetrasNav" aria-current="page" href="../index.html">Home</a>
+     <!---Aqui se inserta el NavBar que será visible en pantallas mas grandes -->
+     <section>
+      <nav class="navbar navbar-expand-lg  fixed-top modificaColor d-none d-lg-block m-3">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" id="estilosLetrasNav1" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id=  "estilosLetrasNav1"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="productos.html">Nuestros Productos</a></li>
+                  <li><a class="dropdown-item" href="ofertas.html">Sale!!</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  
+                </ul>
+              <li class="nav-item">
+              
+                <a class="nav-link" id="estilosLetrasNav1" href="quienesSomos.html">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="estilosLetrasNav1" href="contacto.html">Contacto</a>
+              </li>
+              </li>
+             
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn  btn-outline-dark" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </section> 
+      <!---Aqui se inserta el NavBar que será visible en pantallas mas pequeñas-->
+      <section>    
+          <nav class="navbar  fixed-top modificaColord-lg-none d-xl-none d-xxl-none m-3">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">Artemisa ♥ Relojes </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="estiloLetrasNav2" aria-current="page" href="../index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="estiloLetrasNav2" href="quienesSomos.html">Sobre Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" id="estiloLetrasNav2" href="contacto.html">Contacto</a>
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="estiloLetrasNav" href="../html/quienesSomos.html">Sobre Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="estiloLetrasNav" href="../html/contacto.html">Contacto</a>
-                          </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" id="estiloLetrasNav" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Productos
-                          </a>
-                          <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                            <li><a class="dropdown-item" href="../html/productos.html">Nuestros Productos</a></li>
-                            <li><a class="dropdown-item" href="../html/ofertas.html">Sale!!</a></li>
-                          </ul>
-                      </ul>
-                      
-                    </div>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="estiloLetrasNav2" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Productos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                          <li><a class="dropdown-item" href="productos.html">Nuestros Productos</a></li>
+                          <li><a class="dropdown-item" href="ofertas.html">Sale!!</a></li>
+                        </ul>
+                    </ul>
+                    
                   </div>
                 </div>
-              </nav>
-        </section>
+              </div>
+            </nav>
+      </section>
         
         
     </header>
 
     <main class="contenedorMainContacto d-flex justify-content-center flex-column">
-      <h1 class="tituloContacto">Envianos tu consulta</h1>
+      <h1 class="tituloContacto">Ingrese su  consulta</h1>
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Ingrese su dirección de Correo Electrónico</label>
         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu consulta</label>
+        <label for="exampleFormControlTextarea1" class="form-label">Especifique el producto que desee o su consulta y en breve le responderemos</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
         
-        <input type="submit" value="Enviar Consulta" class="botonEnviar">
+        <input type="submit" value="Enviar">
        
         <input type="reset">
 </form>
