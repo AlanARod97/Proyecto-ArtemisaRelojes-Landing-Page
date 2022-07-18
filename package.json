@@ -1,0 +1,23 @@
+{
+  "name": "segunda-entrega-del-proyecto-final---alan-a.-rodriguez",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlanARod97/Segunda-Entrega-Del-Proyecto-Final.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlanARod97/Segunda-Entrega-Del-Proyecto-Final/issues"
+  },
+  "homepage": "https://github.com/AlanARod97/Segunda-Entrega-Del-Proyecto-Final#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

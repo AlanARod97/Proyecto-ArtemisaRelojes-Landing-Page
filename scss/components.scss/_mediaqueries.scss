@@ -1,0 +1,192 @@
+/*--------------MEDIA QUERYS---------------*/
+
+@media all and (max-width: 1200px){
+    .portadaIndex , .portadaProductos , .portadaOfertas , 
+    .portadaSobreNosotros , .portadaContacto{
+        
+       height: 30vh; 
+    }
+
+    .contenedorFraseMainIndex{
+        width: 100%;
+        height: 30vh;
+        
+        
+    }
+
+    .contenedorProductosResponsive1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+   
+    
+}
+
+
+@media all and (max-width: 992px) {
+    .tituloSobreNosotros{
+       margin: 8% 10% 10px 5%;
+    }
+    
+    
+    .parrafoSobreNosotros{
+        margin: 0px 30% 10px 5%;
+    }
+    
+    
+    .imagenSobreNosotros{
+        width: 20rem;
+        height: 25rem;
+    }
+}  
+
+@media all and (max-width: 768px){
+
+   
+    .contenedorFraseMainIndex{
+        margin-bottom: 5%;
+    }
+    .contenedorProductosResponsive1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .transformacionProductos:hover{
+        transform: none;
+        
+    }
+
+    .contenedorOfertasResponsive1{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    
+    .transformacionOfertas{
+        transform: none;
+        
+    }
+
+    .tituloSobreNosotros{
+        
+        font-size: x-large;
+        margin: 10% 10% 10px 5%;
+    }
+    
+    .tituloSegundoSobreNosotros{
+       font-size: large;
+    
+    }
+    
+    
+    
+    .parrafoSobreNosotros{
+        
+        font-size: small;
+        
+    }
+    
+    .contenedorImagenSobreNosotros{
+        margin: 10px 0% 10px 20%;
+    }
+    .imagenSobreNosotros{
+        width: 15rem;
+        height: 20rem;
+    
+    }
+   
+}
+    
+
+@media all and (max-width: 576px){
+    
+
+.tituloMainIndex{
+    font-size: large;
+}
+
+.parrafoMainIndex{
+    font-size: x-large;
+}
+
+.contenedorFraseMainIndex{
+    width: 100%;
+    height: 30vh;
+    
+    
+}
+
+
+.tituloSobreNosotros{
+     font-size: large;
+     margin: 15% 10% 10px 10%;
+}
+
+.tituloSegundoSobreNosotros{
+    font-size: medium;
+    
+}
+
+
+
+.parrafoSobreNosotros{
+    font-size: x-small;
+    
+}
+
+.contenedorImagenSobreNosotros{
+    margin: 10px 0% 10px 15%;
+}
+.imagenSobreNosotros{
+    width: 15rem;
+    height: 20rem;
+
+}
+
+}
+
+@media all and (max-width: 450px){
+
+
+.tituloMainIndex{
+    font-size: x-large;
+}
+    
+.parrafoMainIndex{
+    font-size: large;
+}
+    
+.contenedorFraseMainIndex{
+    width: 100%;
+    height: 25vh;
+        
+}
+.tituloSobreNosotros{
+    font-size: medium;
+    margin: 15% 0% 10px 5%;
+}
+    
+.tituloSegundoSobreNosotros{
+    
+    font-size: small;
+        
+}
+    
+    
+.parrafoSobreNosotros{
+       
+    font-size: xx-small;
+    margin: 0px 20% 10px 5%;
+}
+    
+.contenedorImagenSobreNosotros{
+    margin: 10px 0% 10px 5%;
+}
+    
+.imagenSobreNosotros{
+     width: 10rem;
+    height: 15rem;
+    
+}
+}

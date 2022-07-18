@@ -1,0 +1,51 @@
+@import '../base.scss/variables';
+/*---------INDEX-------------*/
+
+.portadaIndex{
+    width: 100%;
+    height: 70vh;
+    background-image: url(../img/portadaArtemisa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+
+.contenedorFraseMainIndex{
+    width: 100%;
+    height: 40vh;
+    
+    
+}
+
+.tituloMainIndex{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.parrafoMainIndex{
+    text-align: center;
+    font-size: xx-large;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.enlacesSecundarios{
+    display:flex;
+    justify-content: center; 
+    flex-direction: row;
+    
+}
+
+.estiloLetrasEnlacesSecundarios{
+    text-decoration: none;
+    padding-right: 5%;
+    color: $Color_Letras;
+    
+}
+
+.contenedorCartasIndex{
+    background-color: #3F4E4F;
+    border-radius: 5px;
+}

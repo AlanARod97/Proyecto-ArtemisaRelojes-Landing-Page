@@ -1,0 +1,24 @@
+/*--------PRODUCTOS----------*/
+
+.portadaProductos{
+    width: 100%;
+    height: 50vh;
+    background-image: url(../img/Productos.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
+.contenedorMainProductos{
+    margin-top: 2%;
+
+}
+
+.transformacionProductos:hover{
+    transform: scale(1.1);
+    transition: 1s;
+
+}
+

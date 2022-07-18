@@ -1,0 +1,73 @@
+@import '../base.scss/variables';
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#body{
+    margin: 10px 10px 10px 10px;
+    background-color: ivory;
+}
+
+/*----------Estilos Comunes de Todas las Paginas-------------*/
+
+/*navBar*/
+.modificaColor{
+    color: transparent;
+    
+}
+
+#estilosLetrasNav1{
+    font-size: medium;
+    color: #DCD7C9;
+    
+  
+    
+}
+
+#estilosLetrasNav1:hover{
+    color: #E6BA95;
+    transform: scale(1.1);
+    transition: 0.5s;
+    
+}
+
+#estiloLetrasNav2:hover{
+    color: $Color_Letras;
+    
+}
+
+/*Footer*/
+.contenedorFooter{
+    
+    width: 100%;
+    height: 10vh;
+    margin-top: 5%;
+    border-top: 1px solid rgba(0, 0, 0, 0.582);
+    
+    
+}
+
+
+
+
+
+.tituloFooter{
+    font-size: small;
+    margin:auto;
+    color: rgba(0, 0, 0, 0.582);
+}
+
+.estiloIconosFooter{
+    margin: auto;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.582);
+    width: 30px;
+    height: 30px;
+    
+}
+
+.estiloIconosFooter:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
