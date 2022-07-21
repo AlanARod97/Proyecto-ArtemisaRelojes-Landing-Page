@@ -1,12 +1,13 @@
 @import '../base.scss/variables';
+@import '../base.scss/maps';
+@import '../base.scss/mixin';
+@import '../base.scss/extends';
 /*-------------CONTACTO-----------------------*/
 .portadaContacto{
-    width: 100%;
+    width: map-get($ancho, w-100 );
     height: 50vh;
     background-image: url(../img/Contactos.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    @include estilosbackground;
 
 }
 
