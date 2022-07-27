@@ -9,7 +9,7 @@
     <meta name="keywords" content="TiendaOnline, Relojes, Compra, Diseño">
     <meta property="og:title" content="Artemisa Relojes|Tienda Online">
     <meta property="og:description" content="Tienda Online de Relojes">
-    <link rel="icon" href="./img/logoArtemisaRelojesenNegro-SINFONDO.png" type="image/png" />
+    <link rel="icon" href="../img/logoartemisarelojes-FONDO NEGRO.png" type="image/png" />
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/7225d3aba0.js" crossorigin="anonymous"></script>
@@ -18,78 +18,77 @@
     <header class="portadaContacto">
       
        
-     <!---Aqui se inserta el NavBar que será visible en pantallas mas grandes -->
+     <!---Aqui se inserta el NavBar que será visible en pantallas mas grandes-->
      <section>
-      <nav class="navbar navbar-expand-lg  fixed-top modificaColor d-none d-lg-block m-3">
+      <nav class="navbar navbar-expand-lg fixed-top modificaColor d-none d-lg-block ">
         <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../img/LogoArtemisaRelojes-SinFondo.png" alt="Logo Artemisa Relojes" width="130" height="130">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" id="estilosLetrasNav1" aria-current="page" href="../index.html">Home</a>
+                <a class="nav-link active" id="estilosLetrasNav1" aria-current="page" href="../index.html">Inicio</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" id="estilosLetrasNav1" href="./quienesSomos.html">Sobre Nosotros</a>
+              </li>
+          
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id=  "estilosLetrasNav1"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" id="estilosLetrasNav1" href="./productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Productos
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="productos.html">Nuestros Productos</a></li>
-                  <li><a class="dropdown-item" href="ofertas.html">Sale!!</a></li>
-                  <li><hr class="dropdown-divider"></li>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./productos_mujer.html">Relojes de Mujer </a></li>
+                  <li><a class="dropdown-item" href="./productos_hombre.html">Relojes de Hombre </a></li>
                   
                 </ul>
-              <li class="nav-item">
-              
-                <a class="nav-link" id="estilosLetrasNav1" href="quienesSomos.html">Sobre Nosotros</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" id="estilosLetrasNav1" href="contacto.html">Contacto</a>
-              </li>
-              </li>
-             
+
+                <li class="nav-item">
+                  <a class="nav-link" id="estilosLetrasNav1" href="./contacto.html">Contacto</a>
+                </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn  btn-outline-dark" type="submit">Search</button>
-            </form>
           </div>
         </div>
       </nav>
     </section> 
       <!---Aqui se inserta el NavBar que será visible en pantallas mas pequeñas-->
       <section>    
-          <nav class="navbar  fixed-top modificaColord-lg-none d-xl-none d-xxl-none m-3">
+          <nav class="navbar  fixed-top modificaColor d-lg-none d-xl-none d-xxl-none m-3">
               <div class="container-fluid">
-                <a class="navbar-brand" href="#">Artemisa ♥ Relojes </a>
+                <a class="navbar-brand" href="#">Artemisa 🤍 Relojes </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                   <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                   </div>
                   <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                       <li class="nav-item">
-                        <a class="nav-link active" id="estiloLetrasNav2" aria-current="page" href="../index.html">Home</a>
+                        <a class="nav-link active" id="estiloLetrasNav2" aria-current="page" href="../index.html">Inicio</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" id="estiloLetrasNav2" href="quienesSomos.html">Sobre Nosotros</a>
+                        <a class="nav-link" id="estiloLetrasNav2" href="./quienesSomos.html">Sobre Nosotros</a>
                       </li>
-                      <li class="nav-item">
-                          <a class="nav-link" id="estiloLetrasNav2" href="contacto.html">Contacto</a>
-                        </li>
                       <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="estiloLetrasNav2" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" id="estiloLetrasNav2" href="./productos.html" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Productos
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                          <li><a class="dropdown-item" href="productos.html">Nuestros Productos</a></li>
-                          <li><a class="dropdown-item" href="ofertas.html">Sale!!</a></li>
+                          <li><a class="dropdown-item" href="./productos_mujer.html">Relojes de Mujer </a></li>
+                          <li><a class="dropdown-item" href="./productos_hombre.html">Relojes de Hombre</a></li>
                         </ul>
+                      <li class="nav-item">
+                          <a class="nav-link" id="estiloLetrasNav2" href="./contacto.html">Contacto</a>
+                      </li>
+                      
                     </ul>
                     
                   </div>

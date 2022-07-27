@@ -4,8 +4,7 @@
 }
 
 #body {
-  margin: 10px 10px 10px 10px;
-  background-color: ivory;
+  background-color: black;
 }
 
 /*----------Estilos Comunes de Todas las Paginas-------------*/
@@ -20,13 +19,13 @@
 }
 
 #estilosLetrasNav1:hover {
-  color: #E6BA95;
+  color: #ca9468;
   transform: scale(1.1);
   transition: 0.5s;
 }
 
 #estiloLetrasNav2:hover {
-  color: rgba(165, 97, 42, 0.877);
+  color: #ca9468;
 }
 
 /*Footer*/
@@ -34,24 +33,25 @@
   width: 100%;
   height: 10vh;
   margin-top: 5%;
-  border-top: 1px solid rgba(0, 0, 0, 0.582);
+  border-top: 1px solid #DCD7C9;
 }
 
 .tituloFooter {
   font-size: small;
   margin: auto;
-  color: rgba(0, 0, 0, 0.582);
+  color: #DCD7C9;
 }
 
 .estiloIconosFooter {
+  color: #DCD7C9;
   margin: auto;
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.582);
   width: 30px;
   height: 30px;
 }
 
 .estiloIconosFooter:hover {
+  color: #DCD7C9;
   transform: scale(1.1);
   transition: 0.5s;
 }
@@ -64,7 +64,7 @@
 /*---------INDEX-------------*/
 .portadaIndex {
   width: 100%;
-  height: 70vh;
+  height: 60vh;
   background-image: url(../img/portadaArtemisa.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -73,15 +73,17 @@
 
 .contenedorFraseMainIndex {
   width: 100%;
-  height: 40vh;
+  height: 30vh;
 }
 
 .tituloMainIndex {
+  color: #DCD7C9;
   text-align: center;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .parrafoMainIndex {
+  color: #DCD7C9;
   text-align: center;
   font-size: xx-large;
   margin-right: 20%;
@@ -94,12 +96,18 @@
 
 .estiloLetrasEnlacesSecundarios {
   text-decoration: none;
-  padding-right: 5%;
-  color: rgba(165, 97, 42, 0.877);
+  padding: 0 5% 0 5%;
+  color: #ca9468;
+}
+
+.estiloLetrasEnlacesSecundarios:hover {
+  color: #DCD7C9;
+  transform: scale(1.1);
+  transition: 1, 5s;
 }
 
 .contenedorCartasIndex {
-  background-color: #3F4E4F;
+  background-color: #8a8986;
   border-radius: 5px;
 }
 
@@ -128,23 +136,6 @@
 .enlacesSecundarios {
   display: flex;
   justify-content: center;
-} /*-------------OFERTAS---------------*/
-.portadaOfertas {
-  width: 100%;
-  height: 50vh;
-  background-image: url(../img/Ofertas.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.contenedorMainOfertas {
-  margin-top: 2%;
-}
-
-.enlacesSecundarios {
-  display: flex;
-  justify-content: center;
 }
 
 /*------------Sobre Nosotros----------*/
@@ -158,20 +149,20 @@
 }
 
 .tituloSobreNosotros {
-  color: rgba(165, 97, 42, 0.877);
+  color: #ca9468;
   text-align: justify;
   font-size: xx-large;
   margin: 5% 10% 10px 5%;
 }
 
 .tituloSegundoSobreNosotros {
-  color: rgba(165, 97, 42, 0.877);
+  color: #ca9468;
   text-align: justify;
   margin: 0px 10% 10px 5%;
 }
 
 .parrafoSobreNosotros {
-  color: rgba(165, 97, 42, 0.877);
+  color: #ca9468;
   text-align: justify;
   font-size: medium;
   margin: 0px 30% 10px 5%;
@@ -185,7 +176,7 @@
   width: 20rem;
   height: 30rem;
   margin-top: 10%;
-  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.521);
+  box-shadow: 20px 10px 10px 0 white;
 }
 
 .enlacesSecundarios {
@@ -204,13 +195,13 @@
 }
 
 .contenedorMainContacto {
-  border: dotted 3px rgba(165, 97, 42, 0.877);
+  border: dotted 3px #ca9468;
   margin-top: 5%;
 }
 
 .tituloContacto {
   text-align: center;
-  color: rgba(165, 97, 42, 0.877);
+  color: #ca9468;
   font-size: xx-large;
   margin-top: 1%;
 }
