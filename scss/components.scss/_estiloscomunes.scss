@@ -6,8 +6,8 @@
 }
 
 #body{
-    
-    background-color: black;
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
 }
 
 /*----------Estilos Comunes de Todas las Paginas-------------*/
@@ -37,6 +37,7 @@
     color: $Color_Letras;
     
 }
+
 
 /*Footer*/
 .contenedorFooter{
@@ -71,5 +72,5 @@
 .estiloIconosFooter:hover{
     color: #DCD7C9;
     transform: scale(1.1);
-    transition: 0.5s;
+    transition: 0.3s;
 }
