@@ -11,15 +11,32 @@
 
 }
 
-.contenedorMainContacto{
-    
-    border: dotted 3px $Color_Letras;
-    margin-top: 5%;
+/*---------------------Formulario de Compra---------------*/
+.contenedorContacto-Compra{
+    margin-right: 10%;
+    margin-left: 10%;
 }
 
-.tituloContacto{
+.tituloContacto-Compra{
+    color: whitesmoke;
     text-align: center;
-    color: $Color_Letras;
     font-size: xx-large;
-    margin-top: 1%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+
+}
+
+/*----------------Formulario de contacto--------------*/
+
+.contenedorContacto-Consulta{
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.tituloContacto-Consulta{
+    color: whitesmoke;
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 5%;
+    border-top: 1px solid rgba(245, 245, 245, 0.548);
 }

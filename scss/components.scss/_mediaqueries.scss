@@ -18,26 +18,40 @@
         display: flex;
         flex-wrap: wrap;
     }
+
+    
    
     
 }
 
 
 @media all and (max-width: 992px) {
+    .imagenSobreNosotros{
+        width: 20rem;
+        height: 25rem;
+        margin-left: 50%;
+        
+    }
+    
     .tituloSobreNosotros{
-       margin: 8% 10% 10px 5%;
+        
+        margin-left: 30%;
+        
+    }
+    
+    .tituloSegundoSobreNosotros{
+        margin-left: 30%;
+        
+    
     }
     
     
     .parrafoSobreNosotros{
-        margin: 0px 30% 10px 5%;
+        
+        margin-left: 30%;
+        
     }
     
-    
-    .imagenSobreNosotros{
-        width: 20rem;
-        height: 25rem;
-    }
 }  
 
 @media all and (max-width: 768px){
@@ -76,33 +90,35 @@
         
     }
 
-    .tituloSobreNosotros{
-        
-        font-size: x-large;
-        margin: 10% 10% 10px 5%;
-    }
-    
-    .tituloSegundoSobreNosotros{
-       font-size: large;
-    
-    }
-    
-    
-    
-    .parrafoSobreNosotros{
-        
-        font-size: small;
-        
-    }
-    
-    .contenedorImagenSobreNosotros{
-        margin: 10px 0% 10px 20%;
-    }
     .imagenSobreNosotros{
         width: 15rem;
         height: 20rem;
+        margin-left: 45%;
+        
+    }
+    
+    .tituloSobreNosotros{
+        margin-top: 20%;
+        margin-left: 25%;
+        font-size: x-large;
+        
+    }
+    
+    .tituloSegundoSobreNosotros{
+        margin-left: 25%;
+        font-size: large;
+        
     
     }
+    
+    
+    .parrafoSobreNosotros{
+        margin-right: 10%;
+        margin-left: 25%;
+        font-size: medium;
+        
+    }
+
    
 }
     
@@ -126,31 +142,38 @@
 }
 
 
-.tituloSobreNosotros{
-     font-size: large;
-     margin: 15% 10% 10px 10%;
-}
 
-.tituloSegundoSobreNosotros{
-    font-size: medium;
-    
-}
-
-
-
-.parrafoSobreNosotros{
-    font-size: x-small;
-    
-}
-
-.contenedorImagenSobreNosotros{
-    margin: 10px 0% 10px 15%;
-}
 .imagenSobreNosotros{
     width: 15rem;
     height: 20rem;
+    margin-left: 25%;
+    
+}
+
+.tituloSobreNosotros{
+    margin-top: 30%;
+    font-size: large;
+    
+}
+
+.tituloSegundoSobreNosotros{
+    margin-left: 25%;
+    font-size: medium;
+    
 
 }
+
+
+.parrafoSobreNosotros{
+    margin-right: 10%;
+    margin-left: 25%;
+    font-size: small;
+    
+}
+
+
+
+
 
 }
 
@@ -170,31 +193,45 @@
     height: 20vh;
         
 }
-.tituloSobreNosotros{
-    font-size: medium;
-    margin: 15% 0% 10px 5%;
+
+.contenedorImagenPorQueUsarReloj{
+    width: 20rem;
+    height: 22.5rem;
+   
 }
-    
-.tituloSegundoSobreNosotros{
-    
-    font-size: small;
-        
+
+.contedorSobreNosotros{
+    flex-wrap: wrap;
 }
-    
-    
-.parrafoSobreNosotros{
-       
-    font-size: xx-small;
-    margin: 0px 20% 10px 5%;
-}
-    
-.contenedorImagenSobreNosotros{
-    margin: 10px 0% 10px 5%;
-}
-    
+
 .imagenSobreNosotros{
-     width: 10rem;
-    height: 15rem;
+    margin-top: 10%;
+    margin-left: 40%;
+    margin-bottom: 0px;
     
 }
+
+.tituloSobreNosotros{
+    margin-left: 35%;
+    margin-top: 5%;
+    
+    
 }
+
+.tituloSegundoSobreNosotros{
+    margin-left: 30%;
+    
+    
+
+}
+
+
+.parrafoSobreNosotros{
+    margin-right: 20%;
+    margin-left: 25%;
+    
+    
+}
+
+}
+

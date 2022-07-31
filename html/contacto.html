@@ -104,21 +104,87 @@
         
     </header>
 
-    <main class="contenedorMainContacto d-flex justify-content-center flex-column">
-      <h1 class="tituloContacto">Ingrese su  consulta</h1>
+    <main>
+
+      <section>
+
+        <!------------------Formulario para Compra----------------->
+        <h1 class="tituloContacto-Compra">Realizá tu Compra</h1>
+      </section>
+      <form class="was-validated contenedorContacto-Compra">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Direccion E-mail</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Indique el/los productos que desee</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Indique Direccion de envío</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+        <div class="form-check mb-3">
+          <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
+          <label class="form-check-label" for="validationFormCheck1">Envío por correo</label>
+          <div class="invalid-feedback">Si selecciona esta opción se enviaran el/los producto/s por correo a su domicilio</div>
+        </div>
+      
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+          <label class="form-check-label" for="validationFormCheck2">Pago por transferencia bancaria</label>
+        </div>
+        <div class="form-check mb-3">
+          <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
+          <label class="form-check-label" for="validationFormCheck3">Pago mediante debito o credito</label>
+          <div class="invalid-feedback"> Seleccione el medio de pago</div>
+        </div>
+      
+       
+        <!-- Boton para enviar compra -->
+<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar🛒</button>
+
+        <!-- Mensaje de envío -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">RECIBIMOS TU COMPRA!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Tu compra fue enviada con exito! En instantes recibiras un e-mail con los detalles para realizar el pago. Una vez verificado recibiras tus productos. 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+      </form>
+
+  <!------------------Formulario para Consulta--------------->
+    
+    <h2 class="tituloContacto-Consulta">Envíanos tu consulta</h2>
+    <form class="contenedorContacto-Consulta">
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Ingrese su dirección de Correo Electrónico</label>
+        <label for="exampleFormControlInput1" class="form-label">E-mail</label>
         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Especifique el producto que desee o su consulta y en breve le responderemos</label>
+        <label for="exampleFormControlTextarea1" class="form-label">Déjanos tu consulta</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
-        
-        <input type="submit" value="Enviar">
-       
-        <input type="reset">
-</form>
+      <div>
+        <button class="btn btn-primary" type="submit">Enviar Consulta</button>
+      </div>
+    </form>
+
+  
+    
 
     </main>
 
