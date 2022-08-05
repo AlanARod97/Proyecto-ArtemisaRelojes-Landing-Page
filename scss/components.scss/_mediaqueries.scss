@@ -1,11 +1,14 @@
 /*--------------MEDIA QUERYS---------------*/
 
+/*PANTALLAS xl*/
+
 @media all and (max-width: 1200px){
-    .portadaIndex , .portadaProductos , .portadaOfertas , 
-    .portadaSobreNosotros , .portadaContacto{
+    .portadaIndex , .portadaProductos , 
+    .portadaSobreNosotros , .portadaContacto {
         
        height: 30vh; 
     }
+
 
     .contenedorFraseMainIndex{
         width: 100%;
@@ -19,11 +22,23 @@
         flex-wrap: wrap;
     }
 
+    .estiloBoton{
+       
+        width: 50vw;
+        height: 15vh;
+        margin-top: 10%;
+        margin-bottom: 15%;
+        background-image: radial-gradient(circle at 78.97% 21.03%, #ff90c0 0, #ec87ba 16.67%, #d37db1 33.33%, #b772a4 50%, #9c6796 66.67%, #855d89 83.33%, #71547c 100%);
+        
+    }
+    
+
     
    
     
 }
 
+/*PANTALLAS LG*/
 
 @media all and (max-width: 992px) {
     .imagenSobreNosotros{
@@ -54,6 +69,8 @@
     
 }  
 
+/*PANTALLAS md*/
+
 @media all and (max-width: 768px){
 
    
@@ -67,6 +84,13 @@
 
     .parrafoMainIndex{
         font-size: large;
+    }
+
+    .estiloBoton{
+        width: 50vw;
+        height: 20vh;
+        margin-top: 5%;
+        margin-bottom: 10%;
     }
     .contenedorProductosResponsive1{
         display: flex;
@@ -121,7 +145,8 @@
 
    
 }
-    
+
+/*PANTALLAS sm*/
 
 @media all and (max-width: 576px){
     
@@ -139,6 +164,22 @@
     height: 30vh;
     
     
+}
+
+.estiloBoton{
+  
+    width: 50vw;
+    height: 15vh;
+    margin-top: 5%;
+    margin-bottom: 10%;
+   
+}
+
+.estiloLetrasBoton{
+    font-size: large;
+    
+    
+
 }
 
 
@@ -171,11 +212,9 @@
     
 }
 
-
-
-
-
 }
+
+/*PANTALLAS EXTRA PEQUEÑAS*/
 
 @media all and (max-width: 450px){
 
@@ -194,17 +233,28 @@
         
 }
 
-.contenedorImagenPorQueUsarReloj{
-    width: 20rem;
-    height: 22.5rem;
-   
+.estiloBoton{
+    
+    width: 65vw;
+    height: 15vh;
+    margin-top: 20%;
+    margin-bottom: 30%;
 }
+
+.estiloLetrasBoton{
+    font-size: medium;
+    
+
+}
+
+
 
 .contedorSobreNosotros{
     flex-wrap: wrap;
 }
 
 .imagenSobreNosotros{
+
     margin-top: 10%;
     margin-left: 40%;
     margin-bottom: 0px;
@@ -233,5 +283,34 @@
     
 }
 
+}
+
+@media all and (max-width: 280px){
+
+    .contenedorFraseMainIndex{
+        height: 35vh;
+    }
+    
+    .imagenSobreNosotros{
+        width: 10rem;
+        height: 15rem;
+        
+    }
+
+    .tituloSobreNosotros{
+        
+        margin-right: 10%;
+        margin-left: 25%;
+        
+    }
+    
+    .tituloSegundoSobreNosotros{
+        margin-right: 10%;
+        margin-left: 25%;
+        
+    }
+    
+    
+    
 }
 

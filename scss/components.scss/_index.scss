@@ -63,35 +63,5 @@
     border-radius: 5px;
 }
 
-.tituloPorQueUsarReloj{
-    text-align: center;
-    color: whitesmoke;
-    font-size: xx-large;
-}
-
-.segundoTituloPorQueUsarReloj{
-    text-align: center;
-    color: whitesmoke;
-}
-
-.contenedorImagenPorQueUsarReloj{
-    width: 25rem;
-    height: 22.5rem;
-    background-image: url(../img/porQueUsarReloj4.jpg);
-    background-size: cover;
-    border: 1px solid white;
-    border-radius: 5px;
-    animation: movimiento 10s linear infinite alternate;
-}
-
-
-@keyframes movimiento{
-    from{
-        background-position: bottom left;
-    } to{
-        background-position: top right;
-    }
-}
-
 
 

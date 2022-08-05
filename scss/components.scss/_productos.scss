@@ -10,15 +10,79 @@
     @include estilosbackground;
 }
 
+.contenedorBotones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-.contenedorMainProductos{
-    margin-top: 2%;
+.estiloBoton{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30vw;
+    height: 15vh;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: transparent;
+    border: 3px solid whitesmoke;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease all;
+    position: relative;
+    overflow: hidden;
+    
+    
+   
+    
+}
+
+.estiloBoton span{
+    transition: .4s ease-in-out all;
+    position: absolute;
+    left: 20%;
+}
+
+.estiloBoton:hover span{
+    left: 20px;
+}
+
+.iconoBoton{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    left: -40px;
+    transition: .3s ease-in-out all;
+    opacity: 0;
+}
+
+.estiloBoton:hover{
+    background-image: radial-gradient(circle at 78.97% 21.03%, #ff90c0 0, #ec87ba 16.67%, #d37db1 33.33%, #b772a4 50%, #9c6796 66.67%, #855d89 83.33%, #71547c 100%);
+}
+
+.estiloBoton:hover .iconoBoton{
+    left: calc(100% - 50px);
+    opacity: 2;
+}
+
+.estiloBoton svg{
+    color: whitesmoke;
+    width: 3vw;
+    height: 3vh;
 
 }
 
-.transformacionProductos:hover{
-    transform: scale(1.1);
-    transition: 1s;
 
+.estiloLetrasBoton{
+    font-size: x-large;
+    text-decoration: none;
+    font-weight: bold;
+    color: whitesmoke;
+
+}
+
+.estiloLetrasBoton:hover{
+    color: whitesmoke;
 }
 

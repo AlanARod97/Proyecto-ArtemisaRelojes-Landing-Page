@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -114,35 +115,6 @@
   border-radius: 5px;
 }
 
-.tituloPorQueUsarReloj {
-  text-align: center;
-  color: whitesmoke;
-  font-size: xx-large;
-}
-
-.segundoTituloPorQueUsarReloj {
-  text-align: center;
-  color: whitesmoke;
-}
-
-.contenedorImagenPorQueUsarReloj {
-  width: 25rem;
-  height: 22.5rem;
-  background-image: url(../img/porQueUsarReloj4.jpg);
-  background-size: cover;
-  border: 1px solid white;
-  border-radius: 5px;
-  animation: movimiento 10s linear infinite alternate;
-}
-
-@keyframes movimiento {
-  from {
-    background-position: bottom left;
-  }
-  to {
-    background-position: top right;
-  }
-}
 .enlacesSecundarios {
   display: flex;
   justify-content: center;
@@ -156,13 +128,73 @@
   background-position: center;
 }
 
-.contenedorMainProductos {
-  margin-top: 2%;
+.contenedorBotones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.transformacionProductos:hover {
-  transform: scale(1.1);
-  transition: 1s;
+.estiloBoton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30vw;
+  height: 15vh;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-color: transparent;
+  border: 3px solid whitesmoke;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  position: relative;
+  overflow: hidden;
+}
+
+.estiloBoton span {
+  transition: 0.4s ease-in-out all;
+  position: absolute;
+  left: 20%;
+}
+
+.estiloBoton:hover span {
+  left: 20px;
+}
+
+.iconoBoton {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  left: -40px;
+  transition: 0.3s ease-in-out all;
+  opacity: 0;
+}
+
+.estiloBoton:hover {
+  background-image: radial-gradient(circle at 78.97% 21.03%, #ff90c0 0, #ec87ba 16.67%, #d37db1 33.33%, #b772a4 50%, #9c6796 66.67%, #855d89 83.33%, #71547c 100%);
+}
+
+.estiloBoton:hover .iconoBoton {
+  left: calc(100% - 50px);
+  opacity: 2;
+}
+
+.estiloBoton svg {
+  color: whitesmoke;
+  width: 3vw;
+  height: 3vh;
+}
+
+.estiloLetrasBoton {
+  font-size: x-large;
+  text-decoration: none;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.estiloLetrasBoton:hover {
+  color: whitesmoke;
 }
 
 .enlacesSecundarios {
@@ -191,19 +223,19 @@
 }
 
 .tituloSobreNosotros {
-  margin-top: 15%;
-  margin-left: 25%;
+  margin-top: 27%;
+  margin-left: 27%;
   color: whitesmoke;
 }
 
 .tituloSegundoSobreNosotros {
-  margin-left: 25%;
+  margin-left: 27%;
   color: rgba(245, 245, 245, 0.842);
 }
 
 .parrafoSobreNosotros {
   margin-right: 20%;
-  margin-left: 25%;
+  margin-left: 27%;
   text-align: justify;
   color: rgba(245, 245, 245, 0.637);
 }
@@ -252,8 +284,9 @@
 }
 
 /*--------------MEDIA QUERYS---------------*/
+/*PANTALLAS xl*/
 @media all and (max-width: 1200px) {
-  .portadaIndex, .portadaProductos, .portadaOfertas,
+  .portadaIndex, .portadaProductos,
 .portadaSobreNosotros, .portadaContacto {
     height: 30vh;
   }
@@ -265,7 +298,15 @@
     display: flex;
     flex-wrap: wrap;
   }
+  .estiloBoton {
+    width: 50vw;
+    height: 15vh;
+    margin-top: 10%;
+    margin-bottom: 15%;
+    background-image: radial-gradient(circle at 78.97% 21.03%, #ff90c0 0, #ec87ba 16.67%, #d37db1 33.33%, #b772a4 50%, #9c6796 66.67%, #855d89 83.33%, #71547c 100%);
+  }
 }
+/*PANTALLAS LG*/
 @media all and (max-width: 992px) {
   .imagenSobreNosotros {
     width: 20rem;
@@ -282,6 +323,7 @@
     margin-left: 30%;
   }
 }
+/*PANTALLAS md*/
 @media all and (max-width: 768px) {
   .contenedorFraseMainIndex {
     height: 20vh;
@@ -291,6 +333,12 @@
   }
   .parrafoMainIndex {
     font-size: large;
+  }
+  .estiloBoton {
+    width: 50vw;
+    height: 20vh;
+    margin-top: 5%;
+    margin-bottom: 10%;
   }
   .contenedorProductosResponsive1 {
     display: flex;
@@ -326,6 +374,7 @@
     font-size: medium;
   }
 }
+/*PANTALLAS sm*/
 @media all and (max-width: 576px) {
   .tituloMainIndex {
     font-size: x-large;
@@ -336,6 +385,15 @@
   .contenedorFraseMainIndex {
     width: 100%;
     height: 30vh;
+  }
+  .estiloBoton {
+    width: 50vw;
+    height: 15vh;
+    margin-top: 5%;
+    margin-bottom: 10%;
+  }
+  .estiloLetrasBoton {
+    font-size: large;
   }
   .imagenSobreNosotros {
     width: 15rem;
@@ -356,6 +414,7 @@
     font-size: small;
   }
 }
+/*PANTALLAS EXTRA PEQUEÑAS*/
 @media all and (max-width: 450px) {
   .tituloMainIndex {
     font-size: x-large;
@@ -367,9 +426,14 @@
     width: 100%;
     height: 20vh;
   }
-  .contenedorImagenPorQueUsarReloj {
-    width: 20rem;
-    height: 22.5rem;
+  .estiloBoton {
+    width: 65vw;
+    height: 15vh;
+    margin-top: 20%;
+    margin-bottom: 30%;
+  }
+  .estiloLetrasBoton {
+    font-size: medium;
   }
   .contedorSobreNosotros {
     flex-wrap: wrap;
@@ -391,9 +455,74 @@
     margin-left: 25%;
   }
 }
+@media all and (max-width: 280px) {
+  .contenedorFraseMainIndex {
+    height: 35vh;
+  }
+  .imagenSobreNosotros {
+    width: 10rem;
+    height: 15rem;
+  }
+  .tituloSobreNosotros {
+    margin-right: 10%;
+    margin-left: 25%;
+  }
+  .tituloSegundoSobreNosotros {
+    margin-right: 10%;
+    margin-left: 25%;
+  }
+}
 .enlacesSecundarios {
   display: flex;
   justify-content: center;
+}
+
+.enlacesSecundarios {
+  display: flex;
+  justify-content: center;
+}
+
+/*----------Productos De Mujer----------*/
+.portadaProductosMujer {
+  width: 100%;
+  height: 30vh;
+  background-image: url(../img/productosMujer.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contenedorMainProductos {
+  margin-top: 2%;
+}
+
+.transformacionProductos:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.enlacesSecundarios {
+  display: flex;
+  justify-content: center;
+}
+
+/*----------Productos De Hombre----------*/
+.portadaProductosHombre {
+  width: 100%;
+  height: 30vh;
+  background-image: url(../img/productosHombre.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contenedorMainProductos {
+  margin-top: 2%;
+}
+
+.transformacionProductos:hover {
+  transform: scale(1.1);
+  transition: 1s;
 }
 
 /*# sourceMappingURL=style.css.map */
