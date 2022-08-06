@@ -326,6 +326,7 @@
 /*PANTALLAS md*/
 @media all and (max-width: 768px) {
   .contenedorFraseMainIndex {
+    margin-top: 10%;
     height: 20vh;
   }
   .tituloMainIndex {
